@@ -9,7 +9,7 @@ import CoreData
 
 extension Score {
 
-    convenience init(score: Int, context:NSManagedObjectContext = CoreDataManager.context) {
+    @discardableResult convenience init(score: Int, context:NSManagedObjectContext = CoreDataManager.context) {
         self.init(context: context)
         self.score = Int16(score)
     }

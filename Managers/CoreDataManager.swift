@@ -44,7 +44,5 @@ class CoreDataManager {
     /**
      Calculate the high score.
      */
-    func calculateHighScore() -> Int {
-        return 0
-    }
+
 

@@ -22,8 +22,16 @@ class StartViewController: UIViewController {
      */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        highScoreLabel.text = String(gameBrain.highScore)
         DataController.shared.fetchScores()
+        updateHighScore()
+    }
+    
+    func updateHighScore () {
+        let newHighscore = DataController.shared.calculateHighScore()
+        highScoreLabel.text = String(newHighscore)
+        if gameBrain.highScore < newHighscore {
+            gameBrain.highScore = newHighscore
+        }
     }
     
     /**
