@@ -22,6 +22,7 @@ class StartViewController: UIViewController {
      */
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        DataController.shared.addScore(score: gameBrain.score)
         DataController.shared.fetchScores()
         updateHighScore()
     }

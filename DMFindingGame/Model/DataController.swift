@@ -22,16 +22,23 @@ class DataController {
     }()
     
     func addScore(score: Int) {
-        Score(score: score)
-        CoreDataManager.saveContext()
+        
+        if score != 0 {
+            Score(score: score)
+            CoreDataManager.saveContext()
+        }
     }
     
     func fetchScores () {
+        
         scores = (try? CoreDataManager.context.fetch(fetchRequest)) ?? []
         
     }
     
     func calculateHighScore () -> Int {
+//        guard let score = scores.first?.score else {return nil}
+//        return Int(score)
+        
         return Int(scores.first?.score ?? 0)
     }
 }
