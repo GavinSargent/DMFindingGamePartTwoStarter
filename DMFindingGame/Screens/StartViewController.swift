@@ -23,6 +23,7 @@ class StartViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         highScoreLabel.text = String(gameBrain.highScore)
+        DataController.shared.fetchScores()
     }
     
     /**
@@ -32,4 +33,10 @@ class StartViewController: UIViewController {
     @IBAction func startButtonTapped(_ sender: UIButton) {
         self.performSegue(withIdentifier: "goToGame", sender: self)
     }
+    
+    
+    @IBAction func seeAllScoresPressed(_ sender: UIButton) {
+        
+    }
+    
 }

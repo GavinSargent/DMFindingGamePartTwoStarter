@@ -16,6 +16,11 @@
 		639FBDEB29ED96ED008CEF57 /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FBDEA29ED96ED008CEF57 /* StartViewController.swift */; };
 		639FBDF129EDA7F6008CEF57 /* GameBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639FBDF029EDA7F6008CEF57 /* GameBrain.swift */; };
 		63F098E229B046BE00B97BC2 /* DMFindingGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63F098E129B046BE00B97BC2 /* DMFindingGameTests.swift */; };
+		A56C51852A002B9800FE62E6 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C51842A002B9800FE62E6 /* CoreDataManager.swift */; };
+		A56C51892A002D5000FE62E6 /* Main.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A56C51872A002D5000FE62E6 /* Main.xcdatamodeld */; };
+		A56C518B2A002E5000FE62E6 /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C518A2A002E5000FE62E6 /* StatsViewController.swift */; };
+		A56C518D2A01AB5100FE62E6 /* Scores+Convenience.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C518C2A01AB5100FE62E6 /* Scores+Convenience.swift */; };
+		A56C518F2A01AC9F00FE62E6 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A56C518E2A01AC9F00FE62E6 /* DataController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +46,11 @@
 		639FBDF029EDA7F6008CEF57 /* GameBrain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBrain.swift; sourceTree = "<group>"; };
 		63F098DF29B046BE00B97BC2 /* DMFindingGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DMFindingGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		63F098E129B046BE00B97BC2 /* DMFindingGameTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DMFindingGameTests.swift; sourceTree = "<group>"; };
+		A56C51842A002B9800FE62E6 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		A56C51882A002D5000FE62E6 /* Main.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Main.xcdatamodel; sourceTree = "<group>"; };
+		A56C518A2A002E5000FE62E6 /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		A56C518C2A01AB5100FE62E6 /* Scores+Convenience.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Scores+Convenience.swift"; sourceTree = "<group>"; };
+		A56C518E2A01AC9F00FE62E6 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +74,7 @@
 		637793FA29A31E0900D08D42 = {
 			isa = PBXGroup;
 			children = (
+				A56C51862A002BA000FE62E6 /* Managers */,
 				6377940529A31E0900D08D42 /* DMFindingGame */,
 				63F098E029B046BE00B97BC2 /* DMFindingGameTests */,
 				6377940429A31E0900D08D42 /* Products */,
@@ -106,6 +117,7 @@
 			children = (
 				639FBDEA29ED96ED008CEF57 /* StartViewController.swift */,
 				6377940A29A31E0900D08D42 /* GameViewController.swift */,
+				A56C518A2A002E5000FE62E6 /* StatsViewController.swift */,
 				6377940C29A31E0900D08D42 /* Main.storyboard */,
 			);
 			path = Screens;
@@ -115,6 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				639FBDF029EDA7F6008CEF57 /* GameBrain.swift */,
+				A56C51872A002D5000FE62E6 /* Main.xcdatamodeld */,
+				A56C518E2A01AC9F00FE62E6 /* DataController.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -125,6 +139,15 @@
 				63F098E129B046BE00B97BC2 /* DMFindingGameTests.swift */,
 			);
 			path = DMFindingGameTests;
+			sourceTree = "<group>";
+		};
+		A56C51862A002BA000FE62E6 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				A56C51842A002B9800FE62E6 /* CoreDataManager.swift */,
+				A56C518C2A01AB5100FE62E6 /* Scores+Convenience.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -228,11 +251,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A56C51852A002B9800FE62E6 /* CoreDataManager.swift in Sources */,
 				6377940B29A31E0900D08D42 /* GameViewController.swift in Sources */,
+				A56C518B2A002E5000FE62E6 /* StatsViewController.swift in Sources */,
 				639FBDF129EDA7F6008CEF57 /* GameBrain.swift in Sources */,
 				639FBDEB29ED96ED008CEF57 /* StartViewController.swift in Sources */,
+				A56C518F2A01AC9F00FE62E6 /* DataController.swift in Sources */,
+				A56C51892A002D5000FE62E6 /* Main.xcdatamodeld in Sources */,
 				6377940729A31E0900D08D42 /* AppDelegate.swift in Sources */,
 				6377940929A31E0900D08D42 /* SceneDelegate.swift in Sources */,
+				A56C518D2A01AB5100FE62E6 /* Scores+Convenience.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -395,7 +423,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7T5K9UZ754;
+				DEVELOPMENT_TEAM = PYJTS2FY9Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DMFindingGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -409,7 +437,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = davidruvinskiy.DMFindingGame;
+				PRODUCT_BUNDLE_IDENTIFIER = gavinsargent.DMFindingGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -424,7 +452,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 7T5K9UZ754;
+				DEVELOPMENT_TEAM = PYJTS2FY9Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = DMFindingGame/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -438,7 +466,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = davidruvinskiy.DMFindingGame;
+				PRODUCT_BUNDLE_IDENTIFIER = gavinsargent.DMFindingGame;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -513,6 +541,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		A56C51872A002D5000FE62E6 /* Main.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				A56C51882A002D5000FE62E6 /* Main.xcdatamodel */,
+			);
+			currentVersion = A56C51882A002D5000FE62E6 /* Main.xcdatamodel */;
+			path = Main.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 637793FB29A31E0900D08D42 /* Project object */;
 }
